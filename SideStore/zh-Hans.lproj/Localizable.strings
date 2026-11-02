@@ -69,7 +69,6 @@
 "Restart Required" = "需要重新启动";
 "Restart Now" = "立即重启";
 "Switch" = "切换";
-"OK" = "好";
 "CELLULAR REFRESH" = "蜂窝网络刷新";
 "Reset to Defaults" = "恢复默认设置";
 "GENERAL" = "通用";
@@ -129,7 +128,6 @@
 "Portal" = "开发者门户";
 "Missing Cert" = "缺少证书";
 "Provisioning Profiles" = "描述文件";
-"Delete" = "删除";
 "Edit" = "编辑";
 "Share" = "分享";
 "Edit on Developer Portal" = "在开发者门户中编辑";
