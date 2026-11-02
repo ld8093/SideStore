@@ -722,7 +722,6 @@
 "App ID Details" = "App ID 详情";
 "App Groups (%ld)" = "App 组（%ld）";
 "Group ID: %1$@" = "组 ID：%1$@";
-"You cannot use special characters such as @, &, *, ', \", -, ." = "不能使用 @、&、*、'、\"、-、. 等特殊字符。";
 "Are you sure you want to delete '%1$@' (%2$@) from Apple Developer Portal?" = "确定要从 Apple 开发者门户删除“%1$@”（%2$@）吗？";
 "Registered Devices (%ld)" = "已注册设备（%ld）";
 "Provisioning Profiles (%ld)" = "描述文件（%ld）";
@@ -790,9 +789,6 @@
 "days" = "天";
 "Open SideStore" = "打开 SideStore";
 "Launch app to update widget" = "启动应用以更新小组件";
-"Expires in
-" = "过期倒计时
-";
 "DAYS" = "天";
 "DAY" = "天";
 "Unsupported iOS" = "不支持的 iOS 版本";
@@ -810,3 +806,5 @@
 "IPA File" = "IPA 文件";
 "Refresh All Apps" = "刷新所有应用";
 "Refresh Apps via Widget" = "通过小组件刷新应用";
+
+"Expires in\n" = "过期倒计时\n";
