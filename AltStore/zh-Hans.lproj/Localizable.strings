@@ -228,3 +228,6 @@
 "Unsupported iOS" = "不支持的 iOS 版本";
 "Requires \\(requiredVersion) or later" = "需要 \\(requiredVersion) 或更高版本";
 "App Extensions" = "应用扩展";
+
+/* 追加：错误日志、权限审核和应用图标 */
+
