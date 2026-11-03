@@ -15,3 +15,6 @@
 "Widget ID update Intent" = "更新小组件 ID";
 "ID" = "ID";
 "Provide a numeric ID to identify the widget" = "请输入用于识别小组件的数字 ID";
+"Active Apps" = "正在使用的应用";
+"App Status" = "应用状态";
+"AltWidget (Icon)" = "AltWidget（图标）";
