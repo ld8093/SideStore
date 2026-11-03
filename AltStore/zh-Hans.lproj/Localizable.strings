@@ -203,14 +203,14 @@
 "Are you sure you want to clear the error log?" = "确定要清除错误日志吗？";
 "Clear Error Log" = "清除错误日志";
 "Failed to Clear Error Log" = "清除错误日志失败";
-"Copy Error Message" = "复制错误消息";
+"Copy Error Message" = "复制错误信息";
 "Copy Error Code" = "复制错误代码";
 "Search FAQ" = "搜索常见问题";
 "View More Details" = "查看更多详情";
 "Today" = "今天";
 "Failure" = "失败";
 "No Refresh Attempts" = "没有刷新记录";
-"The more you use SideStore, the more often iOS will allow it to refresh apps in the background." = "你越经常使用 SideStore，iOS 就越有可能允许它在后台刷新应用。";
+"The more you use SideStore, the more often iOS will allow it to refresh apps in the background." = "使用 SideStore 的次数越多，iOS 就越有可能允许它在后台刷新应用。";
 "Review Permissions" = "检查权限";
 "Additional Permissions" = "额外权限";
 "These are permissions required by “%@” that SideStore does not recognize. Make sure you understand them before continuing." = "以下是“%@”需要但 SideStore 无法识别的权限。继续之前，请确认你了解这些权限。";
