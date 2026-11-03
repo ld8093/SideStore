@@ -245,8 +245,6 @@
 "Certificate" = "证书";
 "Same Certificate" = "相同的证书";
 "The selected certificate is already being used for this app. Please use the Resign option instead." = "此应用已在使用所选证书。请改用“重新签名”选项。";
-"“\\(self.app.name)” will be automatically given these permissions once installed." = "安装后，“\\(self.app.name)”将自动获得这些权限。";
-"This version of “\\(self.app.name)” requires additional permissions." = "此版本的“\\(self.app.name)”需要额外权限。";
 "Enable Background Refresh to automatically refresh apps in the background when connected to Wi-Fi. \\n\\nEnable Disable Idle Timeout to allow SideStore to keep running in the background." = "开启“后台刷新”后，连接 Wi-Fi 时即可在后台自动刷新应用。\\n\\n开启“禁用闲置超时”可让 SideStore 持续在后台运行。";
 "Database Delete Scheduled on Next Launch" = "数据库将在下次启动时删除";
 "App is closing in \\(time) seconds..." = "应用将在 \\(time) 秒后关闭…";
