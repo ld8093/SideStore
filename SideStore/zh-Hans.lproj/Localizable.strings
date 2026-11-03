@@ -196,7 +196,7 @@
 "Deactivate Certificate" = "停用证书";
 "Are you sure you want to deactivate the active signing certificate locally?" = "确定要在本地停用当前签名证书吗？";
 "Delete Certificate" = "删除证书";
-"Are you sure you want to delete this certificate locally? This will remove it from the cached local store." = "确定要在本地删除此证书吗？此操作会将其从本地缓存中移除。";
+"Are you sure you want to delete this certificate locally? This will remove it from the cached local store." = "确定要在本地删除此证书吗？此操作会将其从本地缓存存储中移除。";
 "Import Certificate Password" = "导入证书密码";
 "Success" = "成功";
 "Import Summary" = "导入摘要";
@@ -398,8 +398,8 @@
 "Active Signing Certificate" = "当前签名证书";
 "Custom third-party certificate (different team)" = "自定义第三方证书（不同团队）";
 "Deactivate Locally" = "在本地停用";
-"Reveal Details" = "显示详细信息";
-"Hide Details" = "隐藏详细信息";
+"Reveal Details" = "显示详情";
+"Hide Details" = "隐藏详情";
 "Copy S/N" = "复制序列号";
 "Serial: " = "序列号：";
 "ID: " = "ID：";
@@ -561,7 +561,7 @@
 
 /* 追加：开发者门户、诊断与应用资源查看界面 */
 "Server: \\(URL(string: UserDefaults.standard.menuAnisetteURL)?.host ??" = "服务器：\\(URL(string: UserDefaults.standard.menuAnisetteURL)?.host ??";
-"Save as Overrides" = "另存为覆盖配置";
+"Save as Overrides" = "另存为自定义设置";
 "Remote Server Sync" = "远程服务器同步";
 "SN: " = "序列号：";
 "Deactivate" = "停用";
@@ -829,3 +829,12 @@
 "Associated Devices (\\(selectedDeviceIDs.count))" = "关联设备（\\(selectedDeviceIDs.count)）";
 "Successfully imported '\\(account.email)'!" = "已成功导入“\\(account.email)”！";
 "Imported Log\\n(\\(importedURL.lastPathComponent))" = "已导入日志\\n(\\(importedURL.lastPathComponent))";
+
+"Encoding Failed" = "编码失败";
+"Unable to encode JSON as UTF-8." = "无法将 JSON 编码为 UTF-8。";
+"Imported successfully" = "导入成功";
+"Fetched server config!" = "已获取服务器配置！";
+"No fetched headers found" = "未找到已获取的请求头";
+"Fetch from server first." = "请先从服务器获取。";
+"This will clear the locally stored private key of this certificate.\\n\\nName: \\(cert.name)\\nS/N: \\(cert.serialNumber)" = "这将清除此证书在本地存储的私钥。\\n\\n名称：\\(cert.name)\\n序列号：\\(cert.serialNumber)";
+"Enter the password to decrypt the imported certificate file.\\n\\nFile: \\(viewModel.currentImportFilename)" = "请输入密码以解密导入的证书文件。\\n\\n文件：\\(viewModel.currentImportFilename)";
