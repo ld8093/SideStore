@@ -1,0 +1,17 @@
+"Expired" = "已过期";
+"Expires in" = "剩余有效期";
+"day" = "天";
+"days" = "天";
+"1 day" = "1 天";
+"\(daysRemaining) days" = "\(daysRemaining) 天";
+"Expires in\n" = "剩余有效期\n";
+"Open SideStore" = "打开 SideStore";
+"Launch app to update widget" = "打开应用以更新小组件";
+"DAYS" = "天";
+"DAY" = "天";
+"AltWidget (Text)" = "AltWidget（文本）";
+"Select App" = "选择应用";
+"App" = "应用";
+"Widget ID update Intent" = "更新小组件 ID";
+"ID" = "ID";
+"Provide a numeric ID to identify the widget" = "请输入用于识别小组件的数字 ID";
