@@ -69,13 +69,13 @@
 "Change Provisioning Profile" = "更换描述文件";
 "Reset Provisioning Profile" = "重置描述文件";
 "Provisioning Profile" = "描述文件";
-"Failed to refresh Store" = "刷新商店失败";
+"Failed to refresh Store" = "刷新应用商店失败";
 "Failed to refresh Source '%@'" = "刷新来源“%@”失败";
-"Failed to refresh %@ Sources" = "刷新 %@ 个来源失败";
-"Could not refresh store." = "无法刷新商店。";
+"Failed to refresh %@ Sources" = "刷新 %1$@ 个来源失败";
+"Could not refresh store." = "无法刷新应用商店。";
 "Could not refresh source “%@”." = "无法刷新来源“%@”。";
-"Could not refresh %@ sources." = "无法刷新 %@ 个来源。";
-"Tap to view source errors." = "轻点以查看来源错误。";
+"Could not refresh %@ sources." = "无法刷新 %1$@ 个来源。";
+"Tap to view source errors." = "轻点查看来源错误。";
 "No Apps" = "没有应用";
 "Please make sure your spelling is correct, or try searching for another app." = "请检查输入是否正确，或尝试搜索其他应用。";
 "Loading..." = "正在加载…";
@@ -180,11 +180,11 @@
 "SideStore was installed by a different signing tool (like Xcode or AltStore)." = "SideStore 是通过其他签名工具（例如 Xcode 或 AltStore）安装的。";
 "The provisioning profile for SideStore is missing or invalid." = "SideStore 的描述文件缺失或无效。";
 "The signing certificate could not be extracted from SideStore's binary." = "无法从 SideStore 二进制文件中提取签名证书。";
-"Revoke and Resign Now" = "立即撤销并重新签名";
+"Revoke and Resign Now" = "撤销证书并立即重新签名";
 "Resign Now" = "立即重新签名";
 "Signing certificate mismatch detected." = "检测到签名证书不匹配。";
 "To ensure you can continue using SideStore, \\nthe app must be reinstalled now using the new certificate. Otherwise, you will be unable to refresh or open SideStore once the old certificate expires." = "为了确保你可以继续使用 SideStore，\\n必须立即使用新证书重新安装应用。否则，旧证书过期后，你将无法刷新或打开 SideStore。";
-"This reinstallation registers the new signature with the OS and will terminate SideStore. You can reopen SideStore immediately once reinstallation is completed." = "重新安装会向操作系统注册新的签名，并终止 SideStore。安装完成后，你可以立即重新打开 SideStore。";
+"This reinstallation registers the new signature with the OS and will terminate SideStore. You can reopen SideStore immediately once reinstallation is completed." = "重新安装会向操作系统注册新的签名，并关闭 SideStore。重新安装完成后，你可以立即重新打开 SideStore。";
 "Reason:" = "原因：";
 "Failed to Resign SideStore" = "重新签名 SideStore 失败";
 "Resign Later" = "稍后重新签名";
@@ -212,9 +212,9 @@
 "No Refresh Attempts" = "没有刷新记录";
 "The more you use SideStore, the more often iOS will allow it to refresh apps in the background." = "你越经常使用 SideStore，iOS 就越有可能允许它在后台刷新应用。";
 "Review Permissions" = "检查权限";
-"Additional Permissions" = "其他权限";
-"These are permissions required by “%@” that SideStore does not recognize. Make sure you understand them before continuing." = "“%@”需要以下 SideStore 无法识别的权限。继续之前，请确保你了解这些权限。";
-"Approve" = "批准";
+"Additional Permissions" = "额外权限";
+"These are permissions required by “%@” that SideStore does not recognize. Make sure you understand them before continuing." = "以下是“%@”需要但 SideStore 无法识别的权限。继续之前，请确认你了解这些权限。";
+"Approve" = "允许";
 "Expired" = "已过期";
 "Expires in \\(daysRemaining) " = "将在 \\(daysRemaining) 天后过期";
 "day" = "天";
@@ -265,3 +265,7 @@
 "Cleared adi.pb!" = "已清除 adi.pb！";
 "You will need to log back into Apple ID in SideStore." = "你需要在 SideStore 中重新登录 Apple ID。";
 "Sources determine what apps are available in SideStore. The more sources you add, the better your SideStore experience will be.\\n\\nDon’t know where to start?" = "来源决定了 SideStore 中可用的应用。添加的来源越多，SideStore 的使用体验就越丰富。\\n\\n不知道从哪里开始？";
+
+"“\\(self.app.name)” will be automatically given these permissions once installed." = "安装后，“\\(self.app.name)”将自动获得这些权限。";
+"This version of “\\(self.app.name)” requires additional permissions." = "此版本的“\\(self.app.name)”需要额外权限。";
+"To ensure you can continue using SideStore, \\nthe app must be reinstalled now using the new certificate. Otherwise, you will be unable to refresh or open SideStore until you reinstall it." = "为了确保你能够继续使用 SideStore，\\n必须立即使用新证书重新安装此应用。否则，在重新安装之前，你将无法刷新或打开 SideStore。";
