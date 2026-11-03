@@ -816,3 +816,13 @@
 "Associated Certificates" = "关联证书";
 "Add" = "添加";
 "Associated Devices" = "关联设备";
+
+/* 补充：高级设置、发现、备份及资源查看器 */
+"Empty directory" = "目录为空";
+"No results" = "没有结果";
+"Loading\\u{2026}" = "正在加载…";
+"Text" = "文本";
+"Copied!" = "已复制！";
+"Copy XML" = "复制 XML";
+"Copy JSON" = "复制 JSON";
+"Privacy Permissions" = "隐私权限";
