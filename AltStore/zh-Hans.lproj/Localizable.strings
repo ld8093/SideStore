@@ -267,3 +267,7 @@
 "“\\(self.app.name)” will be automatically given these permissions once installed." = "安装后，“\\(self.app.name)”将自动获得这些权限。";
 "This version of “\\(self.app.name)” requires additional permissions." = "此版本的“\\(self.app.name)”需要额外权限。";
 "To ensure you can continue using SideStore, \\nthe app must be reinstalled now using the new certificate. Otherwise, you will be unable to refresh or open SideStore until you reinstall it." = "为了确保你能够继续使用 SideStore，\\n必须立即使用新证书重新安装此应用。否则，在重新安装之前，你将无法刷新或打开 SideStore。";
+"Keep signing certificate" = "保留签名证书";
+"Keep Anisette data" = "保留 Anisette 数据";
+"Keep Anisette headers" = "保留 Anisette 请求头";
+"Keep SideSign headers" = "保留 SideSign 请求头";
