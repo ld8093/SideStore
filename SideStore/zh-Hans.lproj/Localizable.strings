@@ -411,7 +411,6 @@
 "No App Groups found on Developer Portal." = "开发者门户中没有找到 App Groups。";
 "No matching App Groups found." = "没有找到匹配的 App Groups。";
 "App Group" = "App Group";
-"Group ID: \\(group.identifier)" = "组 ID：\\(group.identifier)";
 "Copy Identifier" = "复制标识符";
 "App Group Details" = "App Group 详情";
 "Group identifier must start with 'group.' prefix (e.g. group.com.example.shared)." = "组标识符必须以“group.”开头（例如 group.com.example.shared）。";
@@ -436,7 +435,6 @@
 "No pairing targets found via Bonjour." = "通过 Bonjour 未找到可配对设备。";
 "IPv4: \\(formattedV4)" = "IPv4：\\(formattedV4)";
 "IPv6: \\(formattedV6)" = "IPv6：\\(formattedV6)";
-"Port: \\(portString)" = "端口：\\(portString)";
 "Resolving IP address…" = "正在解析 IP 地址…";
 "Address unavailable" = "地址不可用";
 "Configured Target" = "已配置的目标设备";
