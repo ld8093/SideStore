@@ -808,3 +808,11 @@
 "Refresh Apps via Widget" = "通过小组件刷新应用";
 
 "Expires in\n" = "过期倒计时\n";
+
+/* Additional developer portal and certificate UI translations */
+"Password" = "密码";
+"Connecting to Developer Portal..." = "正在连接开发者门户…";
+"Capabilities & Features" = "功能与特性";
+"Associated Certificates" = "关联证书";
+"Add" = "添加";
+"Associated Devices" = "关联设备";
