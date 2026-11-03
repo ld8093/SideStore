@@ -861,4 +861,6 @@
 "Import SideSign Config JSON" = "导入 SideSign 配置 JSON";
 "Export SideSign Config JSON" = "导出 SideSign 配置 JSON";
 "Port: \\(portString)" = "端口：\\(portString)";
-
+"Search App Groups" = "搜索应用组";
+"Group ID: \\(group.identifier)" = "组 ID：\\(group.identifier)";
+"Search Certificates" = "搜索证书";
