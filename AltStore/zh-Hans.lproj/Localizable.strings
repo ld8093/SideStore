@@ -231,3 +231,37 @@
 
 /* 追加：错误日志、权限审核和应用图标 */
 
+/* 补充：主界面、应用管理、权限、设置及来源界面 */
+"Free developer accounts are limited to 1 active signing certificate. Since the private key for the active certificate was not found on this device, SideStore will create a new certificate." = "免费开发者账户最多只能拥有 1 个有效签名证书。由于此设备上找不到当前证书的私钥，SideStore 将创建新证书。";
+"See All" = "查看全部";
+"Sideload IPA" = "侧载 IPA";
+"Use 'Restore Backup' option to restore data from this imported backup" = "使用“恢复备份”选项，从导入的备份中恢复数据";
+"Export App Backup" = "导出应用备份";
+"Upload Custom App Icon" = "上传自定义应用图标";
+"Active" = "活动";
+"Refresh All" = "全部刷新";
+"Restore Backup" = "恢复备份";
+"Delete Backup" = "删除备份";
+"Certificate" = "证书";
+"Same Certificate" = "相同的证书";
+"The selected certificate is already being used for this app. Please use the Resign option instead." = "此应用已在使用所选证书。请改用“重新签名”选项。";
+"“\\(self.app.name)” will be automatically given these permissions once installed." = "安装后，“\\(self.app.name)”将自动获得这些权限。";
+"This version of “\\(self.app.name)” requires additional permissions." = "此版本的“\\(self.app.name)”需要额外权限。";
+"Enable Background Refresh to automatically refresh apps in the background when connected to Wi-Fi. \\n\\nEnable Disable Idle Timeout to allow SideStore to keep running in the background." = "开启“后台刷新”后，连接 Wi-Fi 时即可在后台自动刷新应用。\\n\\n开启“禁用闲置超时”可让 SideStore 持续在后台运行。";
+"Database Delete Scheduled on Next Launch" = "数据库将在下次启动时删除";
+"App is closing in \\(time) seconds..." = "应用将在 \\(time) 秒后关闭…";
+"Are you sure you want to clear SideStore's cache?\\n\\nCache Size: %@" = "确定要清除 SideStore 的缓存吗？\\n\\n缓存大小：%@";
+"This will remove all temporary files as well as backups for uninstalled apps." = "这将删除所有临时文件以及已卸载应用的备份。";
+"Send Feedback" = "发送反馈";
+"Choose a method to send feedback:" = "选择发送反馈的方式：";
+"GitHub" = "GitHub";
+"Discord" = "Discord";
+"Send Email" = "发送邮件";
+"Are you sure to reset the pairing file?" = "确定要重置配对文件吗？";
+"You can reset the pairing file when you cannot sideload apps or enable JIT. You need to restart SideStore." = "如果无法侧载应用或启用 JIT，可以重置配对文件。重置后需要重新启动 SideStore。";
+"Delete and Reset" = "删除并重置";
+"Pairing File Reset" = "配对文件已重置";
+"Please restart SideStore" = "请重新启动 SideStore";
+"Cleared adi.pb!" = "已清除 adi.pb！";
+"You will need to log back into Apple ID in SideStore." = "你需要在 SideStore 中重新登录 Apple ID。";
+"Sources determine what apps are available in SideStore. The more sources you add, the better your SideStore experience will be.\\n\\nDon’t know where to start?" = "来源决定了 SideStore 中可用的应用。添加的来源越多，SideStore 的使用体验就越丰富。\\n\\n不知道从哪里开始？";
