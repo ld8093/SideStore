@@ -366,7 +366,7 @@ class CertificatesViewModel: ObservableObject {
                 
                 let newCert = try await DeveloperPortalProxy.shared.createCertificate(machineName: machineName, type: type)
                 self.saveLocalCertificate(newCert)
-                self.alertMessage = "\(type.displayName) created successfully."
+                self.alertMessage = String(format: NSLocalizedString("%@ created successfully.", comment: ""), type.displayName)
                 self.showAlert    = true
                 self.loadCertificates(presentingViewController: presentingViewController)
             } catch {
@@ -398,9 +398,9 @@ class CertificatesViewModel: ObservableObject {
                             CertificateManager.shared.clearActiveCertificate()
                             self.activeSerialNumber = nil
                         }
-                        self.alertMessage = "Certificate revoked successfully."
+                        self.alertMessage = NSLocalizedString("Certificate revoked successfully.", comment: "")
                     } else {
-                        self.alertMessage = "Certificate revoked on Apple's servers. Local copy preserved."
+                        self.alertMessage = NSLocalizedString("Certificate revoked on Apple's servers. Local copy preserved.", comment: "")
                     }
                     self.showAlert    = true
                     self.loadCertificates(presentingViewController: presentingViewController)
@@ -420,7 +420,7 @@ class CertificatesViewModel: ObservableObject {
             CertificateManager.shared.clearActiveCertificate()
             self.activeSerialNumber = nil
         }
-        self.alertMessage = "Certificate deleted locally."
+        self.alertMessage = NSLocalizedString("Certificate deleted locally.", comment: "")
         self.showAlert    = true
     }
     
@@ -432,7 +432,7 @@ class CertificatesViewModel: ObservableObject {
         do {
             try CertificateManager.shared.setActiveCertificate(signable)
             self.fetchActiveSerialNumber()
-            self.alertMessage = "Active signing certificate replaced successfully."
+            self.alertMessage = NSLocalizedString("Active signing certificate replaced successfully.", comment: "")
             self.showAlert    = true
         } catch {
             self.errorMessage = "Failed to activate certificate: \(error.localizedDescription)"
@@ -442,7 +442,7 @@ class CertificatesViewModel: ObservableObject {
     func deactivateActiveCertificate() {
         CertificateManager.shared.clearActiveCertificate()
         self.activeSerialNumber = nil
-        self.alertMessage = "Local certificate deactivated."
+        self.alertMessage = NSLocalizedString("Local certificate deactivated.", comment: "")
         self.showAlert    = true
     }
     
@@ -645,7 +645,7 @@ class CertificatesViewModel: ObservableObject {
             let signable = ALTCertificate(x509: cert, privateKey: key)
             saveLocalCertificate(signable)
             self.loadCertificates(presentingViewController: nil)
-            self.alertMessage = "Successfully added private key to certificate \(cert.name)."
+            self.alertMessage = String(format: NSLocalizedString("Successfully added private key to certificate %@", comment: ""), cert.name)
             self.showAlert    = true
         } catch {
             self.errorMessage = error.localizedDescription
@@ -655,7 +655,7 @@ class CertificatesViewModel: ObservableObject {
     func clearPrivateKey(for cert: ALTX509Certificate) {
         CertificateManager.shared.saveX509Certificate(cert)
         self.loadCertificates(presentingViewController: nil)
-        self.alertMessage = "Successfully removed private key from certificate \(cert.name)."
+        self.alertMessage = String(format: NSLocalizedString("Successfully removed private key from certificate %@", comment: ""), cert.name)
         self.showAlert    = true
     }
     
