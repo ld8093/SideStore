@@ -354,3 +354,18 @@
 "Non-developer Apple IDs are limited to 3 active apps and app extensions, and \"%@\" contains %@ %@. Please choose an app to deactivate." = "非开发者 Apple ID 最多只能激活 3 个应用及应用扩展，而“%@”包含 %@ %@。请选择一个应用停用。";
 "You must add this source before installing apps from it.\n\n“%@” will begin downloading once it has been added." = "你必须先添加此来源，才能安装其中的应用。\n\n添加后，“%@”将开始下载。";
 "Sources determine what apps are available in SideStore. The more sources you add, the better your SideStore experience will be.\n\nDon’t know where to start? Try adding one of our Recommended Sources!" = "来源决定了 SideStore 中可用的应用。添加的来源越多，SideStore 的使用体验就越丰富。\n\n不知道从哪里开始？试试添加我们的推荐来源吧！";
+
+/* 补充：应用详情、权限说明、来源导航与分类 */
+"Sources" = "来源";
+"View All" = "查看全部";
+"Featured Apps" = "精选应用";
+"View All Apps" = "查看所有应用";
+"About" = "关于";
+"Unknown Source" = "未知来源";
+"New & Updated" = "最新与更新";
+"Categories" = "分类";
+"Featured" = "精选";
+"Entitlements are additional permissions that grant access to certain system services, including potentially sensitive information." = "授权项是额外的权限，可用于访问某些系统服务，其中可能包含敏感信息。";
+"Other Entitlements" = "其他授权项";
+"SideStore does not have detailed information for these entitlements." = "SideStore 没有这些授权项的详细信息。";
+"%@ may request access to the following:" = "%@ 可能会请求访问以下内容：";
