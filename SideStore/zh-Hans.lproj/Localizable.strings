@@ -1042,3 +1042,29 @@
 "An error occurred during pairing:" = "配对过程中发生错误：";
 "Sign Out" = "退出登录";
 "Keep Local Certificate" = "保留本地证书";
+
+/* Additional developer utilities, Bonjour discovery and account actions */
+"TXT Record" = "TXT 记录";
+"Open in Safari" = "在 Safari 中打开";
+"Discovered Interfaces" = "已发现的网络接口";
+"Use Default" = "使用默认值";
+"items" = "个项目";
+"Ensure Local Network Access is provided otherwise this function may not work as intended since it is based on L N A..." = "请授予“本地网络”访问权限，否则此功能可能无法正常工作，因为它依赖本地网络访问。";
+"Settings -> apps -> SideStore -> LocalNetworkAccess = toggle on" = "设置 -> App -> SideStore -> 本地网络访问：开启";
+"Delete All (" = "全部删除（";
+"Sort:" = "排序：";
+"Group:" = "分组：";
+"Port:" = "端口：";
+"Keep header customizations" = "保留请求头自定义设置";
+"Successfully imported" = "成功导入";
+"Enter a password to decrypt the imported certificate file." = "请输入密码以解密导入的证书文件。";
+"Certificate revoked successfully." = "证书已成功撤销。";
+"Certificate deleted locally." = "证书已在本地删除。";
+"Active signing certificate replaced successfully." = "当前签名证书已成功替换。";
+"Local certificate deactivated." = "本地证书已停用。";
+"Successfully added private key to certificate" = "已成功将私钥添加到证书";
+"Successfully removed private key from certificate" = "已成功从证书中移除私钥";
+"Certificate revoked on Apple's servers. Local copy preserved." = "证书已在 Apple 服务器上撤销。本地副本已保留。";
+"Certificate created successfully." = "证书创建成功。";
+"If deleted, SideStore will require the original IPA file during reinstall, backup, resign, or refresh procedures. Are you sure you want to delete the cached app bundle for" = "删除后，SideStore 在重新安装、备份、重新签名或刷新时将需要原始 IPA 文件。确定要删除此应用的缓存包吗？";
+"Account configuration file was found. Enter password to import." = "已找到账户配置文件。请输入密码以导入。";
