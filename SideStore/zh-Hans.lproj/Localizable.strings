@@ -1077,3 +1077,17 @@
 "Successfully paired with %@ (%@)!\\nPairing file saved to documents." = "已成功与 %@（%@）配对！\\n配对文件已保存到文稿目录。";
 "Initiating pairing handshake on %@:%@..." = "正在 %@:%@ 上发起配对握手…";
 "An error occurred during pairing: %@" = "配对过程中发生错误：%@";
+
+/* Anisette and SideSign configuration notifications */
+"Saved configuration successfully." = "配置已成功保存。";
+"JSON configuration saved successfully!" = "JSON 配置已成功保存！";
+"Invalid JSON Structure" = "JSON 结构无效";
+"Reset to default configuration." = "已恢复默认配置。";
+"Import Failed" = "导入失败";
+"Export Failed" = "导出失败";
+"Fetch Failed" = "获取失败";
+"Loaded fetched data into overrides!" = "已将获取的数据载入自定义覆盖项！";
+"File Selection Failed" = "文件选择失败";
+"Saved SideSign headers successfully." = "SideSign 请求头已成功保存。";
+"SideSign JSON configuration saved successfully!" = "SideSign JSON 配置已成功保存！";
+"Reset to default SideSign configuration." = "已恢复 SideSign 默认配置。";
