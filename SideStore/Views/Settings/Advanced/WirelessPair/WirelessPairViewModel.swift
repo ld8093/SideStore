@@ -509,7 +509,7 @@ final class WirelessPairViewModel: ObservableObject {
                     debugLog("[WirelessPairViewModel] startPairing() SUCCESS with device: name='\(device.name)', model='\(device.model)'")
                     self.pairedDevice = device
                     self.statusText = NSLocalizedString("Success!", comment: "")
-                    self.subStatusText = "Successfully paired with \(device.name) (\(device.model))!\nPairing file saved to documents."
+                    self.subStatusText = String(format: NSLocalizedString("Successfully paired with %@ (%@)!\\nPairing file saved to documents.", comment: ""), device.name, device.model)
                     self.shareSheetURL = URL(fileURLWithPath: device.pairingFilePath)
                     self.isShareSheetPresented = true
                 case .failure(let error):
@@ -549,7 +549,7 @@ final class WirelessPairViewModel: ObservableObject {
         serviceID = nil
         port = nil
         statusText = NSLocalizedString("Connecting to device...", comment: "")
-        subStatusText = "Initiating pairing handshake on \(targetIp):\(targetPort)..."
+        subStatusText = String(format: NSLocalizedString("Initiating pairing handshake on %@:%@...", comment: ""), targetIp, String(targetPort))
         
         wirelessPairing.trigger(
             targetIp: targetIp,
@@ -569,14 +569,14 @@ final class WirelessPairViewModel: ObservableObject {
                     debugLog("[WirelessPairViewModel] triggerPairing() SUCCESS with device: name='\(device.name)', model='\(device.model)'")
                     self.pairedDevice = device
                     self.statusText = NSLocalizedString("Success!", comment: "")
-                    self.subStatusText = "Successfully paired with \(device.name) (\(device.model))!\nPairing file saved to documents."
+                    self.subStatusText = String(format: NSLocalizedString("Successfully paired with %@ (%@)!\\nPairing file saved to documents.", comment: ""), device.name, device.model)
                     self.shareSheetURL = URL(fileURLWithPath: device.pairingFilePath)
                     self.isShareSheetPresented = true
                 case .failure(let error):
                     debugLog("[WirelessPairViewModel] triggerPairing() FAILURE: error='\(error.localizedDescription)'")
                     self.errorMessage = error.localizedDescription
                     self.statusText = NSLocalizedString("Pairing Failed", comment: "")
-                    self.subStatusText = "An error occurred during pairing: \(error.localizedDescription)"
+                    self.subStatusText = String(format: NSLocalizedString("An error occurred during pairing: %@", comment: ""), error.localizedDescription)
                 }
                 completion?(result)
             }
