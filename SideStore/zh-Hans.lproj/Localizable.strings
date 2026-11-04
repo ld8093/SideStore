@@ -1091,3 +1091,8 @@
 "Saved SideSign headers successfully." = "SideSign 请求头已成功保存。";
 "SideSign JSON configuration saved successfully!" = "SideSign JSON 配置已成功保存！";
 "Reset to default SideSign configuration." = "已恢复 SideSign 默认配置。";
+
+/* Certificate management result messages */
+"%@ created successfully." = "%@创建成功。";
+"Successfully added private key to certificate %@." = "已成功将私钥添加到证书 %@。";
+"Successfully removed private key from certificate %@." = "已成功从证书 %@ 中移除私钥。";
