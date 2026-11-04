@@ -266,7 +266,7 @@ class AnisetteDataViewModel: ObservableObject {
         if let error = error {
             toast = ToastView(error: error, opensLog: true)
         } else {
-            toast = ToastView(text: text, detailText: detailText)
+            toast = ToastView(text: NSLocalizedString(text, comment: ""), detailText: detailText.map { NSLocalizedString($0, comment: "") })
         }
         
         let keyWindow = UIApplication.shared.alt_keyWindow
