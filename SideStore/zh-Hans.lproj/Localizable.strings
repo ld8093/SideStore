@@ -864,18 +864,8 @@
 "Search Certificates" = "搜索证书";
 
 /* Certificates, developer portal and app inspection screens */
-"Enter the password to decrypt the imported certificate file.
-
-File: %@" = "请输入密码以解密导入的证书文件。
-
-文件：%@";
-"This will clear the locally stored private key of this certificate.
-
-Name: %@
-S/N: %@" = "这将清除此证书在本地保存的私钥。
-
-名称：%@
-序列号：%@";
+"Enter the password to decrypt the imported certificate file.\n\nFile: %@" = "请输入密码以解密导入的证书文件。\n\n文件：%@";
+"This will clear the locally stored private key of this certificate.\n\nName: %@\nS/N: %@" = "这将清除此证书在本地保存的私钥。\n\n名称：%@\n序列号：%@";
 "Import Private Key (.der/.pem)" = "导入私钥（.der/.pem）";
 "Certificate ID" = "证书 ID";
 "Type Name" = "类型名称";
@@ -988,14 +978,6 @@ S/N: %@" = "这将清除此证书在本地保存的私钥。
 
 /* Install, refresh, verification and authentication flows */
 "The downloaded app" = "下载的应用";
-"The downloaded version of %@ does not match the version specified by the source.
-Expected version: %@
-Found version: %@" = "下载的%@版本与来源指定的版本不一致。
-预期版本：%@
-实际版本：%@";
-"The downloaded version of %@ does not match the build number specified by the source.
-Expected version: %@
-Found version: %@" = "下载的%@版本与来源指定的构建号不一致。
-预期版本：%@
-实际版本：%@";
+"The downloaded version of %@ does not match the version specified by the source.\nExpected version: %@\nFound version: %@" = "下载的%@版本与来源指定的版本不一致。\n预期版本：%@\n实际版本：%@";
+"The downloaded version of %@ does not match the build number specified by the source.\nExpected version: %@\nFound version: %@" = "下载的%@版本与来源指定的构建号不一致。\n预期版本：%@\n实际版本：%@";
 "%@ requires more permissions than the version that is already installed" = "%@需要的权限多于当前已安装版本";
