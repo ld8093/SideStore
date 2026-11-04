@@ -862,3 +862,74 @@
 "Search App Groups" = "搜索应用组";
 "Group ID: \\(group.identifier)" = "组 ID：\\(group.identifier)";
 "Search Certificates" = "搜索证书";
+
+/* Certificates, developer portal and app inspection screens */
+"Enter the password to decrypt the imported certificate file.
+
+File: %@" = "请输入密码以解密导入的证书文件。
+
+文件：%@";
+"This will clear the locally stored private key of this certificate.
+
+Name: %@
+S/N: %@" = "这将清除此证书在本地保存的私钥。
+
+名称：%@
+序列号：%@";
+"Import Private Key (.der/.pem)" = "导入私钥（.der/.pem）";
+"Certificate ID" = "证书 ID";
+"Type Name" = "类型名称";
+"Managed" = "受管理";
+"Yes (Xcode Cloud)" = "是（Xcode Cloud）";
+"No" = "否";
+"Platform" = "平台";
+"Platform Name" = "平台名称";
+"Machine ID" = "设备 ID";
+"Created By" = "创建者";
+"Requester Email" = "申请者邮箱";
+"Owner Name" = "所有者姓名";
+"Owner ID" = "所有者 ID";
+"Auto-Rotation" = "自动轮换";
+"Enabled" = "已启用";
+"Version" = "版本";
+"Subject" = "主题";
+"Issuer" = "颁发者";
+"Serial Number (hex)" = "序列号（十六进制）";
+"Serial Number (dec)" = "序列号（十进制）";
+"Valid From" = "生效时间";
+"Valid Until" = "失效时间";
+"Validity Days" = "有效天数";
+"Total: %d, Elapsed: %d, Remaining: %d" = "总计：%d，已过：%d，剩余：%d";
+"Public Key" = "公钥";
+"Signature Algorithm" = "签名算法";
+"Has Private Key" = "包含私钥";
+"Yes" = "是";
+"Team ID: %@" = "团队 ID：%@";
+"%d registered" = "已注册 %d 个";
+"%d active on portal" = "门户中有 %d 个有效项";
+"%d registered on portal" = "门户中已注册 %d 个";
+"%d configured" = "已配置 %d 个";
+"%d devices" = "%d 台设备";
+"UUID: %@" = "UUID：%@";
+"View Info.plist (%d keys)" = "查看 Info.plist（%d 个键）";
+"Bundle Contents" = "应用包内容";
+"Developer Certificates (%d)" = "开发者证书（%d）";
+"Serial: %@" = "序列号：%@";
+"Provisioned Devices (%d)" = "已配置设备（%d）";
+"Entitlements (%d)" = "授权项（%d）";
+"Expires: %@" = "到期时间：%@";
+"Nested Extensions (%d)" = "嵌套扩展（%d）";
+"Extracting %@…" = "正在解压 %@…";
+"App Extensions (%d)" = "应用扩展（%d）";
+"Loading…" = "正在加载…";
+"Could not decode provisioning profile from %@." = "无法从 %@ 解码配置描述文件。";
+"Signing Rules (%d)" = "签名规则（%d）";
+"No rules matching '%@'" = "没有匹配“%@”的规则";
+"Weight: %@" = "权重：%@";
+"Sealed Files (%d)" = "已封印文件（%d）";
+"No files matching '%@'" = "没有匹配“%@”的文件";
+"SHA-256: %@" = "SHA-256：%@";
+"SHA-1: %@" = "SHA-1：%@";
+"CodeResources" = "CodeResources";
+"Explore Structure (%d keys)" = "查看结构（%d 个键）";
+"Privacy Permissions (%d)" = "隐私权限（%d）";
