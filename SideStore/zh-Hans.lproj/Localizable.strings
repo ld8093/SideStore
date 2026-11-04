@@ -1068,3 +1068,12 @@
 "Certificate created successfully." = "证书创建成功。";
 "If deleted, SideStore will require the original IPA file during reinstall, backup, resign, or refresh procedures. Are you sure you want to delete the cached app bundle for" = "删除后，SideStore 在重新安装、备份、重新签名或刷新时将需要原始 IPA 文件。确定要删除此应用的缓存包吗？";
 "Account configuration file was found. Enter password to import." = "已找到账户配置文件。请输入密码以导入。";
+
+/* Wireless pairing runtime status messages */
+"Tap Start to advertise this device on the local network." = "轻点“启动”以在本地网络中广播此设备。";
+"Enter the pairing code shown below on your other device settings screen." = "在另一台设备的设置界面中输入下方显示的配对码。";
+"Enter the 6-digit code shown on your Apple TV / device screen." = "输入 Apple TV 或设备屏幕上显示的 6 位验证码。";
+"Open Remote Pairing on your Apple TV / Vision Pro / host device to discover this server." = "请在 Apple TV、Vision Pro 或主机设备上打开“远程配对”以发现此服务器。";
+"Successfully paired with %@ (%@)!\\nPairing file saved to documents." = "已成功与 %@（%@）配对！\\n配对文件已保存到文稿目录。";
+"Initiating pairing handshake on %@:%@..." = "正在 %@:%@ 上发起配对握手…";
+"An error occurred during pairing: %@" = "配对过程中发生错误：%@";
