@@ -985,3 +985,17 @@ S/N: %@" = "这将清除此证书在本地保存的私钥。
 "Imported Log" = "已导入的日志";
 "Imported Log (%@)" = "已导入的日志（%@）";
 "Import Log File" = "导入日志文件";
+
+/* Install, refresh, verification and authentication flows */
+"The downloaded app" = "下载的应用";
+"The downloaded version of %@ does not match the version specified by the source.
+Expected version: %@
+Found version: %@" = "下载的%@版本与来源指定的版本不一致。
+预期版本：%@
+实际版本：%@";
+"The downloaded version of %@ does not match the build number specified by the source.
+Expected version: %@
+Found version: %@" = "下载的%@版本与来源指定的构建号不一致。
+预期版本：%@
+实际版本：%@";
+"%@ requires more permissions than the version that is already installed" = "%@需要的权限多于当前已安装版本";
