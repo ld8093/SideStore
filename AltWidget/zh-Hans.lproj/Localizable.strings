@@ -18,3 +18,7 @@
 "Active Apps" = "正在使用的应用";
 "App Status" = "应用状态";
 "AltWidget (Icon)" = "AltWidget（图标）";
+/* 补充：小组件系统版本提示与动态倒计时 */
+"Unsupported iOS" = "不支持的 iOS 版本";
+"Requires \\(requiredVersion) or later" = "需要 iOS \\(requiredVersion) 或更高版本";
+"Expires in \\(daysRemaining) " = "剩余 ";
