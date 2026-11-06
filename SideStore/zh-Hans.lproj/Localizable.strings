@@ -1094,3 +1094,8 @@
 "%@ created successfully." = "%@创建成功。";
 "Successfully added private key to certificate %@." = "已成功将私钥添加到证书 %@。";
 "Successfully removed private key from certificate %@." = "已成功从证书 %@ 中移除私钥。";
+
+"This certificate type requires a paid Apple Developer account." = "此证书类型需要付费 Apple Developer 账户。";
+"Select the certificate type and machine name. This registers the certificate on Apple's servers and saves the private key locally." = "选择证书类型和设备名称。此操作会在 Apple 服务器上注册证书，并将私钥保存在本地。";
+"Failed to read private key:" = "读取私钥失败：";
+"Failed to select " = "选择失败：";
