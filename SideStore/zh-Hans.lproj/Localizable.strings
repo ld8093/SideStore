@@ -1099,3 +1099,8 @@
 "Select the certificate type and machine name. This registers the certificate on Apple's servers and saves the private key locally." = "选择证书类型和设备名称。此操作会在 Apple 服务器上注册证书，并将私钥保存在本地。";
 "Failed to read private key:" = "读取私钥失败：";
 "Failed to select " = "选择失败：";
+"Searching for domains…" = "正在搜索域名…";
+"Searching for service types…" = "正在搜索服务类型…";
+"Searching for instances…" = "正在搜索服务实例…";
+"Performing Diagnostic Check..." = "正在执行诊断检查…";
+"Key was added to certificate \(cert.name) (SN: \(cert.serialNumber))." = "已将密钥添加到证书 \(cert.name)（序列号：\(cert.serialNumber)）。";
