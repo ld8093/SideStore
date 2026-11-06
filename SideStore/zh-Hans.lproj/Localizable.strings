@@ -1104,3 +1104,11 @@
 "Searching for instances…" = "正在搜索服务实例…";
 "Performing Diagnostic Check..." = "正在执行诊断检查…";
 "Key was added to certificate \(cert.name) (SN: \(cert.serialNumber))." = "已将密钥添加到证书 \(cert.name)（序列号：\(cert.serialNumber)）。";
+"Resigned: %@" = "重新签名：%@";
+"Could not parse %@ as a valid Mach-O binary." = "无法将 %@ 解析为有效的 Mach-O 二进制文件。";
+"Signatures & Certificates (%d)" = "签名与证书（%d）";
+"Linked Libraries (%d)" = "链接库（%d）";
+"Segments (%d)" = "段（%d）";
+"Loading Cache..." = "正在加载缓存…";
+"If deleted, SideStore will require the original IPA file during reinstall, backup, resign, or refresh procedures. Are you sure you want to delete the cached app bundle for “%@” ?" = "删除后，SideStore 在重新安装、备份、重新签名或刷新时将需要原始 IPA 文件。确定要删除应用“%@”的缓存包吗？";
+"Changing Anisette config will invalidate your current provisioned Anisette data and you will be signed out.\n\nThis action will require a restart, do you want to proceed?" = "更改 Anisette 配置将使当前已配置的 Anisette 数据失效，并导致你退出登录。\n\n此操作需要重新启动，是否继续？";
