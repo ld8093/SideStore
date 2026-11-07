@@ -1133,3 +1133,9 @@
 "Certificates (%lld/%lld)" = "证书（%lld/%lld）";
 "Devices (%lld/%lld)" = "设备（%lld/%lld）";
 "No registered %@ devices found on this team." = "此团队中未找到已注册的%@设备。";
+"Associated Certificates (%lld)" = "关联的证书（%lld）";
+"Associated Devices (%lld)" = "关联的设备（%lld）";
+"Are you sure you want to delete '%@' from the Apple Developer Portal?" = "确定要从 Apple Developer Portal 删除“%@”吗？";
+"Provisioning Profiles (%lld)" = "配置描述文件（%lld）";
+"Delete All (%lld)" = "全部删除（%lld）";
+"This will permanently delete all %lld provisioning profile(s) for team '%@'." = "这将永久删除团队“%@”的全部 %lld 个配置描述文件。";
