@@ -1203,3 +1203,17 @@
 "Install App" = "安装应用";
 "Would you like to install \"%@\"?" = "是否要安装“%@”？";
 "Install" = "安装";
+"JIT Successfully Enabled" = "JIT 已成功启用";
+"JIT Enabled For %@" = "已为 %@ 启用 JIT";
+"JIT Successfully Enabled for %@" = "已成功为 %@ 启用 JIT";
+"SideStore Expiring Soon" = "SideStore 即将过期";
+"SideStore will expire in 24 hours. Open the app and refresh it to prevent it from expiring." = "SideStore 将在 24 小时后过期。请打开应用并刷新，以防止过期。";
+"SideStore Expiring Extremely Soon" = "SideStore 即将过期！";
+"SideStore will expire in 6 hours! Refresh now to prevent expiration." = "SideStore 将在 6 小时后过期！请立即刷新以防止过期。";
+"SideStore Expired" = "SideStore 已过期";
+"SideStore has expired. Please refresh or reinstall the app." = "SideStore 已过期。请刷新或重新安装应用。";
+"Refreshed Apps" = "应用已刷新";
+"All apps have been refreshed." = "所有应用均已刷新。";
+"Failed to Refresh Apps" = "应用刷新失败";
+"The latest version of %@ could not be downloaded." = "无法下载 %@ 的最新版本。";
+"The dependency '%@' could not be downloaded." = "无法下载依赖项“%@”。";
