@@ -1136,7 +1136,7 @@
 "Are you sure you want to delete '%@' from the Apple Developer Portal?" = "确定要从 Apple Developer Portal 删除“%@”吗？";
 "Provisioning Profiles (%lld)" = "配置描述文件（%lld）";
 "Delete All (%lld)" = "全部删除（%lld）";
-"This will permanently delete all %lld provisioning profile(s) for team '%@'." = "这将永久删除团队“%@”的全部 %lld 个配置描述文件。";
+"This will permanently delete all %lld provisioning profile(s) for team '%@'." = "这将永久删除 %lld 个配置描述文件（团队：%@）。";
 "Keychain item not found." = "未找到钥匙串项目。";
 "Keychain item already exists." = "钥匙串项目已存在。";
 "Keychain authentication failed." = "钥匙串身份验证失败。";
@@ -1248,7 +1248,7 @@
 "To finish refreshing, SideStore must be moved to the background. To do this, you can either go to the Home Screen manually or by hitting Continue. Please reopen SideStore after doing this." = "要完成刷新，必须将 SideStore 切换到后台。你可以手动返回主屏幕，或点击“继续”。完成后请重新打开 SideStore。";
 "Account %@ imported successfully!" = "账户 %@ 已成功导入！";
 "Key was added to certificate %@ (SN: %@)." = "已将密钥添加到证书 %@（序列号：%@）。";
-"This will permanently delete all %lld provisioning profile(s) for team '%@' on Apple's developer portal. SideStore will automatically generate fresh profiles on next app install or refresh." = "这将从 Apple Developer Portal 永久删除团队“%@”的全部 %lld 个配置描述文件。SideStore 会在下次安装或刷新应用时自动生成新的描述文件。";
+"This will permanently delete all %lld provisioning profile(s) for team '%@' on Apple's developer portal. SideStore will automatically generate fresh profiles on next app install or refresh." = "这将从 Apple Developer Portal 永久删除 %lld 个配置描述文件（团队：%@）。SideStore 会在下次安装或刷新应用时自动生成新的描述文件。";
 "IPv4: %@" = "IPv4：%@";
 "IPv6: %@" = "IPv6：%@";
 "Port: %@" = "端口：%@";
