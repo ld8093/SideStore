@@ -548,7 +548,6 @@
 "Add PEM Key" = "添加 PEM 密钥";
 "Add Private Key" = "添加私钥";
 "Key Added" = "密钥已添加";
-"Key was added to certificate \\(cert.name) (SN: \\(cert.serialNumber))." = "密钥已添加到证书 \\(cert.name)（序列号：\\(cert.serialNumber)）。";
 "Edit Identifier Configuration" = "编辑标识符配置";
 "Are you sure you want to delete '\\(group.name)' (\\(group.groupIdentifier)) from Apple Developer Portal?" = "确定要从 Apple 开发者门户中删除“\\(group.name)”（\\(group.groupIdentifier)）吗？";
 "App ID Metadata" = "App ID 元数据";
@@ -1103,7 +1102,6 @@
 "Searching for service types…" = "正在搜索服务类型…";
 "Searching for instances…" = "正在搜索服务实例…";
 "Performing Diagnostic Check..." = "正在执行诊断检查…";
-"Key was added to certificate \(cert.name) (SN: \(cert.serialNumber))." = "已将密钥添加到证书 \(cert.name)（序列号：\(cert.serialNumber)）。";
 "Resigned: %@" = "重新签名：%@";
 "Could not parse %@ as a valid Mach-O binary." = "无法将 %@ 解析为有效的 Mach-O 二进制文件。";
 "Signatures & Certificates (%d)" = "签名与证书（%d）";
@@ -1148,7 +1146,6 @@
 "Proceed" = "继续";
 "Non-developer Apple IDs are limited to 3 active apps and app extensions." = "非开发者 Apple ID 最多只能拥有 3 个处于活动状态的应用及应用扩展。";
 "Non-developer Apple IDs are limited to creating 10 App IDs per week." = "非开发者 Apple ID 每周最多只能创建 10 个 App ID。";
-"Would you like to remove this app's extensions so they don't count towards your limit? There are \\(appBundle.appExtensions.count) Extensions" = "是否移除此应用的扩展，使其不计入数量限制？当前有 \\(appBundle.appExtensions.count) 个扩展。";
 "App Contains Extensions" = "应用包含扩展";
 "Keep App Extensions (Use Main Profile)" = "保留应用扩展（使用主描述文件）";
 "Keep App Extensions (Register App ID for Each Extension)" = "保留应用扩展（为每个扩展注册 App ID）";
@@ -1247,3 +1244,23 @@
 "No active import session." = "当前没有活动的导入会话。";
 "Failed to save uploaded file: %@" = "保存上传文件失败：%@";
 "Export File" = "导出文件";
+"Would you like to remove this app's extensions so they don't count towards your limit? There are %@ Extensions" = "是否要移除此应用的扩展，使其不计入数量限制？当前有 %@ 个扩展。";
+"To finish refreshing, SideStore must be moved to the background. To do this, you can either go to the Home Screen manually or by hitting Continue. Please reopen SideStore after doing this." = "要完成刷新，必须将 SideStore 切换到后台。你可以手动返回主屏幕，或点击“继续”。完成后请重新打开 SideStore。";
+"Account %@ imported successfully!" = "账户 %@ 已成功导入！";
+"Key was added to certificate %@ (SN: %@)." = "已将密钥添加到证书 %@（序列号：%@）。";
+"This will permanently delete all %lld provisioning profile(s) for team '%@' on Apple's developer portal. SideStore will automatically generate fresh profiles on next app install or refresh." = "这将从 Apple Developer Portal 永久删除团队“%@”的全部 %lld 个配置描述文件。SideStore 会在下次安装或刷新应用时自动生成新的描述文件。";
+"IPv4: %@" = "IPv4：%@";
+"IPv6: %@" = "IPv6：%@";
+"Port: %@" = "端口：%@";
+"%@: %@" = "%@: %@";
+"Delete %lld Selected Items?" = "删除选中的 %lld 个项目？";
+"Are you sure you want to permanently delete these %lld items?" = "确定要永久删除这 %lld 个项目吗？";
+"Bulk Rename %lld Items" = "批量重命名 %lld 个项目";
+"Folders (%lld)" = "文件夹（%lld）";
+"Files (%lld)" = "文件（%lld）";
+"%@ items" = "%@ 个项目";
+"Discovered Interfaces (%lld)" = "已发现的网络接口（%lld）";
+"TXT Record (%lld)" = "TXT 记录（%lld）";
+"Copy %@ Record" = "复制 %@ 记录";
+"Open in Safari (%@://)" = "在 Safari 中打开（%@://）";
+"Imported Log\n(%@)" = "已导入日志\n（%@）";
