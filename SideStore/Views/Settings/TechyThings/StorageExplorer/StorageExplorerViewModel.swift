@@ -25,9 +25,9 @@ public final class StorageExplorerClipboard: ObservableObject {
     
     public var pasteLabelText: String {
         if copiedURLs.count == 1, let first = copiedURLs.first {
-            return "Paste “\(first.lastPathComponent)”"
+            return String(format: NSLocalizedString("Paste “%@”", comment: ""), first.lastPathComponent)
         } else if copiedURLs.count > 1 {
-            return "Paste \(copiedURLs.count) Items"
+            return String(format: NSLocalizedString("Paste %@ Items", comment: ""), String(copiedURLs.count))
         }
         return "Paste"
     }
@@ -92,6 +92,7 @@ public enum StorageSortOption: String, CaseIterable, Identifiable {
     case type = "Type"
     
     public var id: String { rawValue }
+    public var localizedTitle: String { NSLocalizedString(rawValue, comment: "") }
 }
 
 // MARK: - Directory Explorer ViewModel
@@ -174,7 +175,7 @@ public final class StorageExplorerViewModel: ObservableObject {
             }
             #endif
         } catch {}
-        return "Unknown"
+        return NSLocalizedString("Unknown", comment: "")
     }
     
     private var loadTask: Task<Void, Never>?
@@ -313,7 +314,7 @@ public final class StorageExplorerViewModel: ObservableObject {
                 }
             } catch {
                 Task { @MainActor in
-                    self.activeAlert = .error("Failed to delete \(item.name): \(error.localizedDescription)")
+                    self.activeAlert = .error(String(format: NSLocalizedString("Failed to delete %@: %@", comment: ""), item.name, error.localizedDescription))
                 }
             }
         }
@@ -335,7 +336,7 @@ public final class StorageExplorerViewModel: ObservableObject {
                 self.isSelectionMode = false
                 self.loadContents()
                 if !errors.isEmpty {
-                    self.activeAlert = .error("Errors deleting items:\n" + errors.joined(separator: "\n"))
+                    self.activeAlert = .error(String(format: NSLocalizedString("Errors deleting items:\n%@", comment: ""), errors.joined(separator: "\n")))
                 }
             }
         }
@@ -353,7 +354,7 @@ public final class StorageExplorerViewModel: ObservableObject {
                 }
             } catch {
                 Task { @MainActor in
-                    self.activeAlert = .error("Failed to rename \(item.name): \(error.localizedDescription)")
+                    self.activeAlert = .error(String(format: NSLocalizedString("Failed to rename %@: %@", comment: ""), item.name, error.localizedDescription))
                 }
             }
         }
@@ -395,7 +396,7 @@ public final class StorageExplorerViewModel: ObservableObject {
                 self.isSelectionMode = false
                 self.loadContents()
                 if !errors.isEmpty {
-                    self.activeAlert = .error("Errors renaming items:\n" + errors.joined(separator: "\n"))
+                    self.activeAlert = .error(String(format: NSLocalizedString("Errors renaming items:\n%@", comment: ""), errors.joined(separator: "\n")))
                 }
             }
         }
@@ -445,7 +446,7 @@ public final class StorageExplorerViewModel: ObservableObject {
                     self.pendingConflicts = conflicts
                     self.presentNextConflict()
                 } else if !copyErrors.isEmpty {
-                    self.activeAlert = .error("Errors copying items:\n" + copyErrors.joined(separator: "\n"))
+                    self.activeAlert = .error(String(format: NSLocalizedString("Errors copying items:\n%@", comment: ""), copyErrors.joined(separator: "\n")))
                 }
             }
         }
@@ -471,7 +472,7 @@ public final class StorageExplorerViewModel: ObservableObject {
         let destURL = conflict.destinationDirectory.appendingPathComponent(trimmed)
         if FileManager.default.fileExists(atPath: destURL.path) {
             // Name still conflicts!
-            self.activeAlert = .error("A file named “\(trimmed)” already exists in this folder. Please choose a different name.")
+            self.activeAlert = .error(String(format: NSLocalizedString("A file named “%@” already exists in this folder. Please choose a different name.", comment: ""), trimmed))
             return
         }
         

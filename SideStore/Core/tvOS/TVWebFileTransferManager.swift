@@ -49,7 +49,8 @@ public final class TVWebFileTransferManager: @unchecked Sendable {
             extensions = ["ipa", "sideconf", "json", "mobiledevicepairing", "plist", "zip"]
         }
 
-        self.currentMode = .import(title: title, acceptedExtensions: extensions, completion: completion)
+        let localizedTitle = NSLocalizedString(title, comment: "")
+        self.currentMode = .import(title: localizedTitle, acceptedExtensions: extensions, completion: completion)
 
         guard let serverURL = self.startListener() else {
             debugLog("[TVWebFileTransferManager] Failed to start listener for import")
@@ -59,8 +60,8 @@ public final class TVWebFileTransferManager: @unchecked Sendable {
 
         DispatchQueue.main.async{
             let alert = UIAlertController(
-                title: title,
-                message: NSLocalizedString("Open this URL on your iPhone, iPad, or Mac on the same Wi-Fi network to upload:\n\n\(serverURL)", comment: ""),
+                title: localizedTitle,
+                message: String(format: NSLocalizedString("Open this URL on your iPhone, iPad, or Mac on the same Wi-Fi network to upload:\n\n%@", comment: ""), serverURL),
                 preferredStyle: .alert
             )
             alert.addAction(UIAlertAction(title: NSLocalizedString("Cancel", comment: ""), style: .cancel) { [weak self] _ in
@@ -80,7 +81,8 @@ public final class TVWebFileTransferManager: @unchecked Sendable {
         completion: (() -> Void)? = nil
     ) {
         self.stop()
-        self.currentMode = .export(fileURL: fileURL, title: title, completion: completion)
+        let localizedTitle = NSLocalizedString(title, comment: "")
+        self.currentMode = .export(fileURL: fileURL, title: localizedTitle, completion: completion)
 
         guard let serverURL = self.startListener() else {
             debugLog("[TVWebFileTransferManager] Failed to start listener for export")
@@ -90,8 +92,8 @@ public final class TVWebFileTransferManager: @unchecked Sendable {
 
         DispatchQueue.main.async {
             let alert = UIAlertController(
-                title: title,
-                message: NSLocalizedString("Open this URL on your iPhone, iPad, or Mac on the same Wi-Fi network to download '\(fileURL.lastPathComponent)':\n\n\(serverURL)", comment: ""),
+                title: localizedTitle,
+                message: String(format: NSLocalizedString("Open this URL on your iPhone, iPad, or Mac on the same Wi-Fi network to download '%@':\n\n%@", comment: ""), fileURL.lastPathComponent, serverURL),
                 preferredStyle: .alert
             )
             alert.addAction(UIAlertAction(title: NSLocalizedString("Done", comment: ""), style: .default) { [weak self] _ in
@@ -237,10 +239,10 @@ public final class TVWebFileTransferManager: @unchecked Sendable {
                     connection.cancel()
                 }))
             } catch {
-                self.sendHTMLResponse(connection: connection, body: self.makeErrorHTMLPage("Failed to read export file: \(error.localizedDescription)"), statusCode: 500)
+                self.sendHTMLResponse(connection: connection, body: self.makeErrorHTMLPage(String(format: NSLocalizedString("Failed to read export file: %@", comment: ""), error.localizedDescription)), statusCode: 500)
             }
         case .none:
-            self.sendHTMLResponse(connection: connection, body: self.makeErrorHTMLPage("No active transfer."), statusCode: 404)
+            self.sendHTMLResponse(connection: connection, body: self.makeErrorHTMLPage(NSLocalizedString("No active transfer.", comment: "")), statusCode: 404)
         }
     }
 
@@ -257,7 +259,7 @@ public final class TVWebFileTransferManager: @unchecked Sendable {
 
     private func processUploadedBody(bodyData: Data, connection: NWConnection) {
         guard case .import(_, _, let completion) = self.currentMode else {
-            self.sendHTMLResponse(connection: connection, body: self.makeErrorHTMLPage("No active import session."))
+            self.sendHTMLResponse(connection: connection, body: self.makeErrorHTMLPage(NSLocalizedString("No active import session.", comment: "")))
             return
         }
 
@@ -294,7 +296,7 @@ public final class TVWebFileTransferManager: @unchecked Sendable {
                 completion(tempURL)
             }
         } catch {
-            self.sendHTMLResponse(connection: connection, body: self.makeErrorHTMLPage("Failed to save uploaded file: \(error.localizedDescription)"))
+            self.sendHTMLResponse(connection: connection, body: self.makeErrorHTMLPage(String(format: NSLocalizedString("Failed to save uploaded file: %@", comment: ""), error.localizedDescription)))
         }
     }
 
@@ -385,12 +387,12 @@ public final class TVWebFileTransferManager: @unchecked Sendable {
         <body>
             <div class="card">
                 <h1>\(title)</h1>
-                <p>Select and upload your file to Apple TV.</p>
+                <p>\(NSLocalizedString("Select and upload your file to Apple TV.", comment: ""))</p>
                 <form action="/upload" method="post" enctype="multipart/form-data">
                     <div class="upload-box">
                         <input type="file" name="file" accept="\(acceptAttr)" required>
                     </div>
-                    <button type="submit">Upload to Apple TV</button>
+                    <button type="submit">\(NSLocalizedString("Upload to Apple TV", comment: ""))</button>
                 </form>
             </div>
         </body>
@@ -405,7 +407,7 @@ public final class TVWebFileTransferManager: @unchecked Sendable {
         <head>
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Transfer Successful</title>
+            <title>\(NSLocalizedString("Transfer Successful", comment: ""))</title>
             <style>
                 body {
                     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -431,8 +433,8 @@ public final class TVWebFileTransferManager: @unchecked Sendable {
         </head>
         <body>
             <div class="card">
-                <h1>✓ Upload Successful</h1>
-                <p><code>\(filename)</code> has been transferred to Apple TV.<br>SideStore will now continue automatically.</p>
+                <h1>\(NSLocalizedString("✓ Upload Successful", comment: ""))</h1>
+                <p><code>\(filename)</code> \(NSLocalizedString("has been transferred to Apple TV.<br>SideStore will now continue automatically.", comment: ""))</p>
             </div>
         </body>
         </html>
@@ -445,7 +447,7 @@ public final class TVWebFileTransferManager: @unchecked Sendable {
         <html lang="en">
         <head>
             <meta charset="utf-8">
-            <title>Transfer Error</title>
+            <title>\(NSLocalizedString("Transfer Error", comment: ""))</title>
             <style>
                 body { font-family: -apple-system, sans-serif; background: #121212; color: #FFF; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
                 .card { background: #1E1E1E; border-radius: 18px; padding: 32px; text-align: center; max-width: 400px; }
@@ -456,9 +458,9 @@ public final class TVWebFileTransferManager: @unchecked Sendable {
         </head>
         <body>
             <div class="card">
-                <h1>Transfer Failed</h1>
+                <h1>\(NSLocalizedString("Transfer Failed", comment: ""))</h1>
                 <p>\(message)</p>
-                <p><a href="/">Try Again</a></p>
+                <p><a href="/">\(NSLocalizedString("Try Again", comment: ""))</a></p>
             </div>
         </body>
         </html>
