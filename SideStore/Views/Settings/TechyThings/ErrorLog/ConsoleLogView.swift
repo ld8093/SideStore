@@ -243,7 +243,7 @@ public struct ConsoleLogView: View {
            
            // Custom Header Bar (similar to QuickLook's preview screen)
            HStack(spacing: 12) {
-               Text(viewModel.activeHeaderTitle)
+               Text(LocalizedStringKey(viewModel.activeHeaderTitle))
                    .font(.system(size: 22, weight: .semibold))
                    .foregroundColor(.white)
                    .lineLimit(1)

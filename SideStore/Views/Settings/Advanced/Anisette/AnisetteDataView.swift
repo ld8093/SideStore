@@ -512,7 +512,7 @@ struct AnisetteDataView: View {
                                         } label: {
                                             HStack(spacing: 4) {
                                                 Image(systemName: isCopiedServer ? "checkmark" : "doc.on.doc")
-                                                Text(isCopiedServer ? "Copied" : "Copy")
+                                                Text(LocalizedStringKey(isCopiedServer ? "Copied" : "Copy"))
                                             }
                                             .font(.footnote.weight(.semibold))
                                             .foregroundColor(isCopiedServer ? .green : .accentColor)
