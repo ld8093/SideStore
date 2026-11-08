@@ -152,3 +152,56 @@
 "Local" = "本地";
 "Expired" = "已过期";
 "No Key" = "没有密钥";
+
+/* Developer Services */
+"Developer Account" = "开发者账户";
+"Developer Portal Services" = "开发者门户服务";
+"App IDs" = "App ID";
+"Certificates" = "证书";
+"App Groups" = "App 分组";
+"Registered Devices" = "已注册设备";
+"Developer Portal" = "开发者门户";
+"Developer Portal Error" = "开发者门户错误";
+
+/* Experimental Features */
+"STANDALONE FEATURES" = "独立功能";
+"MINIMUXER" = "Minimuxer";
+"Experimental Features" = "实验性功能";
+
+/* Bonjour Discovery */
+"Make sure you're connected to a local network." = "请确保设备已连接到本地网络。";
+"Ensure **Local Network Access** is provided otherwise this function may not work as intended since it is based on L N A..." = "请确保已授予**本地网络访问权限**，否则此功能可能无法正常工作，因为它依赖于本地网络访问（LNA）。";
+"No Bonjour services are currently advertised in this domain." = "此域中目前没有正在广播的 Bonjour 服务。";
+"No devices are currently advertising this service." = "目前没有设备正在广播此服务。";
+"Copy Interface" = "复制网络接口";
+"Copy SSH Command" = "复制 SSH 命令";
+"Copy Host:Port Endpoint" = "复制主机:端口端点";
+"Copy Details as JSON" = "以 JSON 格式复制详情";
+
+/* Wireless Pairing */
+"Ensure both devices are on the same Wi-Fi network." = "请确保两台设备连接到同一个 Wi-Fi 网络。";
+"Stop Pairing Server" = "停止配对服务器";
+"Start Pairing Server" = "启动配对服务器";
+"Connect to Target Device" = "连接到目标设备";
+"Enter Pairing PIN" = "输入配对 PIN 码";
+"Pair" = "配对";
+"Enter the 6-digit code displayed on your Apple TV / device screen." = "请输入 Apple TV 或设备屏幕上显示的 6 位验证码。";
+"Pairing Code" = "配对码";
+"Enter this 6-digit code on the connecting device to complete pairing." = "请在要连接的设备上输入此 6 位验证码以完成配对。";
+"Connection Details" = "连接详情";
+
+/* Storage Explorer */
+"Loading directory contents..." = "正在加载目录内容…";
+"Empty Directory" = "空目录";
+"No files or subfolders found in this directory." = "此目录中没有文件或子文件夹。";
+"This item will be permanently removed." = "此项目将被永久删除。";
+"Delete All" = "全部删除";
+"Enter a new name for this item:" = "请输入此项目的新名称：";
+"Rename" = "重命名";
+"File Already Exists" = "文件已存在";
+"Copy as New Name" = "以新名称复制";
+"Cancel All" = "全部取消";
+"Storage Explorer Error" = "存储浏览器错误";
+"Folders First" = "文件夹优先";
+"Wrap File Names" = "文件名自动换行";
+"Iface:" = "网络接口：";
