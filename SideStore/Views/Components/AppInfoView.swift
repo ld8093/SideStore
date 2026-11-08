@@ -63,7 +63,7 @@ struct AppInfoView: View {
                 
                 // Metadata Section
                 Section(header: Text("General Metadata")) {
-                    InfoRow(label: "Status", value: installedApp.isActive ? "Active" : "Inactive", valueColor: installedApp.isActive ? .green : .red)
+                    InfoRow(label: "Status", value: installedApp.isActive ? NSLocalizedString("Active", comment: "") : NSLocalizedString("Inactive", comment: ""), valueColor: installedApp.isActive ? .green : .red)
                     InfoRow(label: "Version", value: installedApp.localizedVersion)
                     if let team = installedApp.team {
                         InfoRow(label: "Team Name", value: team.name)
@@ -93,7 +93,7 @@ struct AppInfoView: View {
                             InfoRow(label: "Executable", value: execName)
                         }
                     }
-                    InfoRow(label: "Uses Main Profile", value: installedApp.useMainProfile ? "Yes" : "No")
+                    InfoRow(label: "Uses Main Profile", value: installedApp.useMainProfile ? NSLocalizedString("Yes", comment: "") : NSLocalizedString("No", comment: ""))
                 }
                 
                 // Provisioning Profile Section
@@ -189,7 +189,7 @@ struct ProvisioningProfileDetailView: View {
                 ProfileInfoRow(label: "App Bundle ID", value: profile.bundleIdentifier)
                 ProfileInfoRow(label: "Created", value: formatDate(profile.creationDate))
                 ProfileInfoRow(label: "Expires", value: formatDate(profile.expirationDate))
-                ProfileInfoRow(label: "Free Developer Profile", value: profile.isFreeProvisioningProfile ? "Yes" : "No")
+                ProfileInfoRow(label: "Free Developer Profile", value: profile.isFreeProvisioningProfile ? NSLocalizedString("Yes", comment: "") : NSLocalizedString("No", comment: ""))
             }
             
             if !profile.certificates.isEmpty {
@@ -284,7 +284,7 @@ struct InfoRow: View {
     
     var body: some View {
         HStack {
-            Text(label)
+            Text(LocalizedStringKey(label))
                 .font(.subheadline)
                 .foregroundColor(.secondary)
             Spacer()
@@ -303,7 +303,7 @@ struct ProfileInfoRow: View {
     
     var body: some View {
         HStack {
-            Text(label)
+            Text(LocalizedStringKey(label))
                 .font(.subheadline)
                 .foregroundColor(.secondary)
             Spacer()
