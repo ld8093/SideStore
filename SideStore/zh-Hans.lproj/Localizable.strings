@@ -1327,3 +1327,8 @@
 "Privacy Permissions (%lld)" = "隐私权限（%lld）";
 "Use Default (%lld ms)" = "使用默认值（%lld 毫秒）";
 "Search sealed files or rules" = "搜索已封印文件或规则";
+/* 补充：证书列表排序与门户证书撤销提示 */
+"Creation Date" = "创建日期";
+"Expiry Date" = "到期日期";
+"Keys" = "密钥";
+"Are you sure you want to revoke '\(certificate.name)' on the Apple Developer Portal? This action cannot be undone." = "确定要在 Apple 开发者门户中撤销证书“\(certificate.name)”吗？此操作无法撤销。";
