@@ -1332,3 +1332,10 @@
 "Expiry Date" = "到期日期";
 "Keys" = "密钥";
 "Are you sure you want to revoke '\(certificate.name)' on the Apple Developer Portal? This action cannot be undone." = "确定要在 Apple 开发者门户中撤销证书“\(certificate.name)”吗？此操作无法撤销。";
+
+/* 补充：可用于签名的证书列表状态 */
+"Name: " = "名称：";
+"Status: " = "状态：";
+"Current App & Active Global" = "当前应用及全局活动证书";
+"Current App" = "当前应用证书";
+"Active Global" = "全局活动证书";
